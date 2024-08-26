@@ -7,3 +7,9 @@ window.addEventListener("load", () => {
 });
 
 // -----------------------------
+
+// -- DETECT MOBILE DEVICES -------------//
+
+  if(/Android|webOS|iPhone|iPad|Blackberry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    // Redirect To index2.html
+    window.location.href='../index2.html'; }
