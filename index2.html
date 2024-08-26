@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Finance Tracker</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="stylesheets/bootsrap/bootstrap.min.css" />
+    <!-- PERSONAL CSS  -->
+    <link rel="stylesheet" href="stylesheets/Styles-mobile.css" />
+    <!-- CHART JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!--  -->
+  </head>
+  <body>
+    <!-- NAVIGATION SECTION AND PROFILE PICTURE -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand logo-pic ms-3" href="#">
+          <img src="icons/logo-white.png" alt="" />
+          <!-- <span class="spin1"></span>
+          <span class="spin2"></span> -->
+        </a>
+        <h1 class="navbar-brand pe-3 me-auto">Ahmadyofficial</h1>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item pe-3">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item pe-3">
+              <a class="nav-link" href="#assets">Assets</a>
+            </li>
+            <li class="nav-item pe-3">
+              <a class="nav-link" href="#income">Income</a>
+            </li>
+            <li class="nav-item pe-3">
+              <a class="nav-link" href="#expenses">Expenses</a>
+            </li>
+            <li class="nav-item pe-3">
+              <a class="nav-link" href="#summary">Summary</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--  -->
+
+    <!-- FIRST SECTION (HOME) -->
+
+    <img class="bg-image" src="pictures/Picture1.jpg" alt="" />
+
+    <section id="home" class="home">
+      <div class="button pe-5 pt-5 pb-5 d-flex justify-content-end">
+        <a
+          tabindex="0"
+          class="btn btn-lg"
+          role="button"
+          data-bs-toggle="popover"
+          data-bs-trigger="focus"
+          title="Dismissible popover"
+          data-bs-content="All Bills have been paid!"
+        >
+          <div class="bell"><img src="icons/bell-solid-240.png" alt="" /></div>
+        </a>
+      </div>
+      <!-- ---------- -->
+      <div class="container-fluid ps-5 m-auto">
+        <div class="row">
+          <div class="heading">
+            <h1>AHMAD S. SULAIMAN</h1>
+            <div class="text-animate"><h2>Personal Finance Tracker</h2></div>
+            <h2></h2>
+          </div>
+
+          <div class="available-bal mt-5">
+            <h4>AVAILABLE BALANCE</h4>
+            <h2>NGN 1,000,000</h2>
+          </div>
+
+          <div class="income-exp pe-5 mt-5 pt-5 d-flex justify-content-end">
+            <div class="box">
+              <h3>Income <img src="icons/up-arrow.png" alt="" /></h3>
+              <h2>&#8358; 23,000</h2>
+            </div>
+
+            <div class="box">
+              <h3>Expense <img src="icons/up-arrow.png" alt="" /></h3>
+              <h2>&#8358; 43,000</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECOND SECTION (ASSETS) -->
+
+    <canvas id="myChart"></canvas>
+    <section id="assets" class="assets"></section>
+
+    <!-- THIRD SECTION (INCOME) -->
+    <section id="income" class="income"></section>
+
+    <!-- FOURTH SECTIO (EXPENSES) -->
+
+    <section id="expenses" class="expenses"></section>
+
+    <!-- FIFTH AND FINAL SECTION (SUMMARY) -->
+
+    <section id="summary" class="summary"></section>
+
+    <!-- BOXICONS CDN ICONS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Internal Javascript -->
+    <script src="Javascript/dodo.js"></script>
+    <!-- BOOTSTRAP JS BUNDLE -->
+    <script src="stylesheets/bootsrap/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
